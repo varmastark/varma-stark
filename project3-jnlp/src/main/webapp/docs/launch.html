@@ -1,0 +1,22 @@
+<html>
+<head>
+
+<title>Biorhythm</title>
+
+</head>
+
+<body>
+<script src="http://java.com/js/deployJava.js"></script>
+
+<center><h2>Biorhythm</h2></center><br />
+
+<script> 
+var attributes = { code:'${app.mainClass}.class', width:400, height:400, codebase:'../classes', archive:'project3-code-${project.version}.jar', name:'${project.artifactId}'} ; 
+var parameters = {jnlp_href: '../docs/launch.jnlp', draggable:'true'} ; 
+deployJava.runApplet(attributes, parameters, '1.6'); 
+</script>
+
+<hr>
+
+</body>
+</html>
